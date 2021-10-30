@@ -1,0 +1,13 @@
+def acronym(string):
+    newString = []
+    s = string.split()
+    x = ''
+    for i in range(len(s)):
+        s[i] = list(s[i])
+        newString.append(s[i][0])
+    x = x.join(newString)
+    return x.upper()
+
+if __name__ == '__main__':
+    s = input("Enter a phrase to be acronymed\n")
+    print(f'Your Acronym for {s} is {acronym(s)}')
